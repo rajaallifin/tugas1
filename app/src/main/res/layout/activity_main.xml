@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#039BE5"
+        android:fontFamily="@font/jost_medium"
+        android:gravity="center"
+        android:padding="15dp"
+        android:shadowRadius="2"
+        android:text="Aplikasi Pembelian Rokok"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvIntro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="left"
+        android:paddingTop="26dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="17dp"
+        android:text="PILIH BELANJA"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Nama Pembeli"
+        android:paddingLeft="2dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Masukkan Nama"
+        android:inputType="text"
+        android:paddingBottom="8dp"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <EditText
+            android:id="@+id/etCariMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginTop="5dp"
+
+            android:hint="Pilih Rokok"
+            android:textSize="13sp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <Button
+            android:id="@+id/btnCariMenu"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:backgroundTint="#039BE5"
+            android:text="Cari"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingBottom="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <FrameLayout
+            android:id="@+id/frmMenu1_container"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="0">
+
+            <ImageView
+                android:id="@+id/ivMenu1_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:gravity="clip_horizontal|center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/np4ikfbd" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frmMenu2_container"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="0">
+
+            <ImageView
+                android:id="@+id/ivMenu2_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:gravity="clip_horizontal|center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/larkok" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frmMenu3_container"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="0">
+
+            <Button
+                android:id="@+id/ivMenu3"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/ivMenu3_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:gravity="clip_horizontal|center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nikx40pf" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frmMenu4_container"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="0">
+
+            <ImageView
+                android:id="@+id/ivMenu4_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="7dp"
+                android:gravity="clip_horizontal|center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kj6duyva" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMenu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sempoerna"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/tvMenu1Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/jost_medium"
+                android:text="Rp 32.000"
+                android:textSize="10dp" />
+
+            <EditText
+                android:id="@+id/etMenu1Jumlah"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/niramit_medium"
+                android:hint="Jumlah"
+                android:gravity=""
+                android:textSize="16dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMenu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L.A"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/tvMenu2Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 33.600"
+                android:fontFamily="@font/jost_medium"
+                android:textSize="10dp"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:id="@+id/etMenu2Jumlah"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah"
+                android:textSize="16dp"
+                android:fontFamily="@font/niramit_medium"
+                android:inputType="number"
+                android:maxLength="2"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMenu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surya"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/tvMenu3Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 29.000"
+                android:fontFamily="@font/jost_medium"
+                android:textSize="10dp"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:id="@+id/etMenu3Jumlah"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah"
+                android:textSize="16dp"
+                android:fontFamily="@font/niramit_medium"
+                android:inputType="number"
+                android:maxLength="2"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMenu4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Malboro"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/tvMenu4Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 39.000"
+                android:fontFamily="@font/jost_medium"
+                android:textSize="10dp"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:id="@+id/etMenu4Jumlah"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah"
+                android:textSize="16dp"
+                android:fontFamily="@font/niramit_medium"
+                android:inputType="number"
+                android:maxLength="2"
+                android:maxLines="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Voucher Pelanggan :"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbVIP3"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:fontFamily="@font/chakra_petch_bold"
+                android:gravity="center"
+                android:paddingLeft="-7dp"
+                android:text="VIP3"
+                android:textColor="@color/golds"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbVIP2"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2"
+                android:background="@color/abu"
+                android:fontFamily="@font/chakra_petch_bold"
+                android:gravity="center"
+                android:paddingLeft="-7dp"
+                android:text="VIP2"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbVIP1"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2"
+                android:background="@color/coklat"
+                android:fontFamily="@font/chakra_petch_bold"
+                android:gravity="center"
+                android:paddingLeft="-9dp"
+                android:text="VIP1"
+                android:textColor="@color/hijau"
+                android:textSize="16sp" />
+
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tvHarga"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Total Harga : "
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnBeli"
+        android:layout_width="149dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#039BE5"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Beli"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F4511E"
+        android:text="Reset"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:onClick="resetData" />
+
+</LinearLayout>
+
+
